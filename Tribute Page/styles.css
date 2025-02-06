@@ -10,13 +10,126 @@
     text-align: center;
 }
 .hero h1{
-    font-size: 130px;
+    font-size: 150px;
     font-weight: bold;
     padding-top: 15%;
+    color: rgb(222, 222, 17);
+
 }
 p,span{
     font-size: 1.5rem;
 }
 span{
     padding-top: 1rem;
+    color: rgb(222, 222, 17);
+}
+.achievement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #2d8cff 0%, #0051b3 100%);
+    padding: 2rem 0;
+}
+.achievement-item {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+}
+.achievement-item h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.achievement-item p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 0;
+}
+svg{
+    font-size: 3rem;
+    color: white;
+}
+h1{
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: 900;
+}
+.career{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    padding: 2rem 0;
+}
+.career-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.career-item h2{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.career-item h3{
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #0051b3;
+}
+.career-item p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(116, 123, 123);
+}
+.glory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    padding: 2rem 0;
+}
+.glory-item img{
+    height: 100%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10% 7%;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 10% 7%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
+.image-container:hover img{
+    transform: scale(1.1);
+    border-radius: 10% 7%;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .career-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
